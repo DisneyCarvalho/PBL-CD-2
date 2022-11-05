@@ -1,0 +1,22 @@
+module bpl2(clock, s1,s2,s3);
+	input clock;
+	output s1,s2,s3;
+	
+	reg [18:0] ano;
+	initial begin
+	ano = 0;
+	end
+	
+	assign s1 = ano[18];
+	assign s2 = ano[17];
+	assign s3 = ano[16];
+	
+	always @(posedge clock) begin
+		ano = ano + 1;
+	end
+	
+		
+	
+	end 
+	
+	

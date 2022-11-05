@@ -1,0 +1,13 @@
+module demux(e1,a,s1);
+	input e1,a;
+	output s1;
+	
+	wire fio1;
+	
+	not(fio1,a);
+	and(s1,fio1,e1);
+	
+	
+endmodule 
+	
+	

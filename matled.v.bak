@@ -1,0 +1,6 @@
+module bpl2a(clock, l,c);
+	input [19:0] clock;
+	output l,c;
+	
+	
+	

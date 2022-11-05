@@ -1,0 +1,14 @@
+module bpl2(e1,a,s1,s2);
+	input e1,a;
+	output s1,s2;
+	
+	wire fio1;
+	
+	not(fio1,a);
+	and(s1,fio1,e1);
+	and(s2,a,e1);
+	
+	
+endmodule 
+	
+	

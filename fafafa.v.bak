@@ -1,0 +1,20 @@
+module bpl2(chaves,clock, l,c);
+	input [19:0] clock;
+	input [7:0] chaves;
+	output [3:0] l;
+	output [1:0] c;
+
+	wire fio1;
+	not(fio1,clock[19]);
+	
+	assign c[0] = clock[19];
+	assign c[0] = fio1;
+	
+	
+endmodule
+	
+	
+	
+	
+	
+	

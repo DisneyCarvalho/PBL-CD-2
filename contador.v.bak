@@ -1,0 +1,8 @@
+module contador (clok, s1,s2);
+	wire a,b,c;
+	nand (a,clok);
+	nand(b,a);
+	nand(c,b);
+	nand(s1,c);
+	
+endmodule 

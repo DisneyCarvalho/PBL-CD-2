@@ -1,0 +1,19 @@
+module subtratorcompleto( a1,a2,a3,a4, b1,b2,b3,b4, bin, s1,s2,s3,s4,s5);
+
+
+
+	input bin, a1,a2,a3,a4, b1,b2,b3,b4;
+	
+	output s1,s2,s3,s4,s5;
+	
+	
+	wire fio1,fio3,fio4,fio6;
+	
+	subtrator subit4( bin,  a4, b4, fio6, s5);
+	subtrator subit3( fio6, a3, b3, fio4, s4);
+	subtrator subit2( fio4, a2, b2, fio3, s3);
+	subtrator subit1( fio3, a1, b1, s1, s2);
+
+	
+	
+endmodule 

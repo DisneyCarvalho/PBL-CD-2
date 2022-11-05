@@ -1,0 +1,26 @@
+module bpl2 (e1,s1,d7,t1,t2);
+	input [6:0] t1,t2;
+	input [3:0] e1;
+	output reg [3:0] s1;
+	output reg [6:0] d7;
+	
+	always @* begin 
+		case (e1)
+		4'b0000: s1 = 4'b1110;
+		4'b0001: s1 = 4'b1101;
+		4'b0010: s1 = 4'b1011;
+		4'b0011: s1 = 4'b0111;
+		endcase
+		
+		case (s1)
+		4'b1110: d7 = 7'b0001101;
+		4'b1101: d7 = 7'b0000001;
+		4'b1011: d7 = 7'b0000000;
+		4'b0111: d7 = 7'b1110001;
+		endcase
+		
+	end 
+	
+
+	
+endmodule 
